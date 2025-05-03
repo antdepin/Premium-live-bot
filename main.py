@@ -37,7 +37,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("🧾 Abbonati con PayPal", url="https://www.paypal.com/ncp/payment/3ZLRX3468NGXJ")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        "👋 Benvenuto su *Premium Live Win!*
+    await message.reply("👋 Benvenuto su *Premium Live Win!*", parse_mode="Markdown")
 
 "
         "🎯 Riceverai giocate live in tempo reale solo se sei abbonato.
