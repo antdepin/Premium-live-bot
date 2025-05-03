@@ -47,7 +47,7 @@ await message.reply_text("👇 Premi il pulsante qui sotto per abbonarti ora:", 
 
         "💶 *Prezzo:* 15€ per 30 giorni di accesso.")
 "
-        "📲 Dopo il pagamento, il tuo accesso sarà attivato manualmente.")
+        
 
 "
         "👇 Premi il pulsante qui sotto per abbonarti ora:",
