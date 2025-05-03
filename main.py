@@ -36,17 +36,30 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
     keyboard = [[InlineKeyboardButton("🧾 Abbonati con PayPal", url="https://www.paypal.com/ncp/payment/3ZLRX3468NGXJ")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    
-await message.reply_text("👋 Benvenuto su *Premium Live Win!*", parse_mode="Markdown")
 
-await message.reply_text("📢 Benvenuto su *Premium Live Win!*", parse_mode="Markdown")
-await message.reply_text("🎯 Riceverai giocate live in tempo reale solo se sei abbonato.")
-await message.reply_text("💰 Prezzo: 15€ per 30 giorni di accesso.")
-await message.reply_text("🛒 Dopo il pagamento, il tuo accesso sarà attivato manualmente.")
-await message.reply_text("👇 Premi il pulsante qui sotto per abbonarti ora:", reply_markup=reply_markup, parse_mode="Markdown")
+await message.reply_text(
+    "👋 Benvenuto su *Premium Live Win!*",
+    parse_mode="Markdown"
+)
 
-        
+await message.reply_text(
+    "🎯 Riceverai giocate live in tempo reale solo se sei abbonato."
+)
 
+await message.reply_text(
+    "💸 *Prezzo:* 15€ per 30 giorni di accesso.",
+    parse_mode="Markdown"
+)
+
+await message.reply_text(
+    "⏳ Dopo il pagamento, il tuo accesso sarà attivato manualmente."
+)
+
+await message.reply_text(
+    "👇 Premi il pulsante qui sotto per abbonarti ora:",
+    reply_markup=reply_markup,
+    parse_mode="Markdown"
+)
 
 async def id_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"Il tuo ID Telegram è: {update.effective_user.id}")
